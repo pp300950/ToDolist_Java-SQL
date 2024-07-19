@@ -12,7 +12,7 @@ public class Controller {
     @FXML
     private void sayHello() {
         String name = nameField.getText();
-        helloLabel.setText("Hello, " + name + "!");
+        helloLabel.setText("ดีจ้า, " + name + "!");
     }
 }
 
