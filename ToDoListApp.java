@@ -27,7 +27,7 @@ public class ToDoListApp extends Application {
     public void start(Stage primaryStage) {
         try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("เชื่อมต่อกับ mysqL สำเร็จ!");
+            System.out.println("เชื่อมต่อกับmysqlสำเร็จ");
         } catch (SQLException e) {
             showError("เกิดข้อผิดพลาดในการเชื่อมต่อกับmySQL: " + e.getMessage());
             return;
@@ -119,7 +119,7 @@ public class ToDoListApp extends Application {
     }
 
     private void showInfo(String message) {
-        
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information");
         alert.setHeaderText(null);
